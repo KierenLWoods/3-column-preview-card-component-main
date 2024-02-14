@@ -1,0 +1,111 @@
+
+
+body {
+   background-color: hsl(0, 0%, 95%);   
+}
+
+main{
+   display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+.container{   
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   max-width: 1440px;
+   padding: 25% 5%;   
+   }
+
+.car-card{
+   font-size: 15px;
+   color: hsla(0, 0%, 100%, 0.75);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.car-card p , .car-card h2 {
+   padding: 0 10% 5% 10%;
+   margin: 0;
+}
+
+.car-card h2 {
+   font-family: "Big Shoulders Display";
+   text-align: left;
+}
+
+.car-card p {   
+   font-family: "Lexend Deca";
+}
+
+.sedan{
+   background-color: hsl(31, 77%, 52%);
+   border-radius: 5px 5px 0 0;
+}
+.suv{
+   background-color: hsl(184, 100%, 22%);   
+}
+.luxury{
+   background-color: hsl(179, 100%, 13%);
+   border-radius:0 0 5px 5px;
+}
+
+.card-contents {  
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.learn_More {
+   background-color: hsl(0, 0%, 95%);
+   border-radius: 25px;
+   border-color: transparent;
+   margin: auto auto 10% 10%;
+   display: block;
+   padding: 3% 8%;
+
+}
+.sedan .learn_More{
+   color: hsl(31, 77%, 52%);
+}
+.suv .learn_More{
+   color: hsl(184, 100%, 22%);   
+}
+.luxury .learn_More{
+   color: hsl(179, 100%, 13%);
+}
+
+.learn_More:hover{
+   background-color: inherit;  
+   cursor:auto;
+   border: solid 1px hsla(0, 0%, 100%, 0.75);
+   color:hsla(0, 0%, 100%, 0.75) !important;
+}
+
+img{
+   height: 40px;
+   width: 60px;   
+   padding: 10% 0 10% 5%;
+}
+
+@media  only screen and (min-width:760px) {
+   .container{   
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: stretch;
+      max-width: 1440px;
+      }
+
+      .sedan {
+          border-radius:5px 0 0 5px;
+      }
+
+      .luxury{
+         border-radius: 0 5px 5px 0;
+      }
+   
+}
