@@ -1,4 +1,6 @@
-
+:root{
+   --tablet-width:768px;
+}
 
 body {
    background-color: hsl(0, 0%, 95%);   
@@ -16,7 +18,7 @@ main{
    justify-content: center;
    align-items: center;
    max-width: 1440px;
-   padding: 25% 5%;   
+   padding: 0 15% 0 15%;   
    }
 
 .car-card{
@@ -28,7 +30,7 @@ main{
 }
 
 .car-card p , .car-card h2 {
-   padding: 0 10% 25% 10%;
+   padding: 0 10% 5% 10%;
    margin: 0;
 }
 
@@ -91,13 +93,13 @@ img{
    padding: 10% 0 10% 5%;
 }
 
-@media  only screen and (min-width:760px) {
+@media  only screen and (min-width:768px) {
    .container{   
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: stretch;
-      max-width: 1440px;
+      padding: 15% 15%
       }
 
       .sedan {
@@ -106,6 +108,11 @@ img{
 
       .luxury{
          border-radius: 0 5px 5px 0;
+      }
+
+      .car-card p , .car-card h2 {
+         padding: 0 10% 25% 10%;
+         margin: 0;
       }
    
 }
